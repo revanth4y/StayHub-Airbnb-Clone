@@ -56,7 +56,7 @@ This project showcases **frontend development** (responsive EJS templates, inter
 5. Open your browser and visit:
    http://localhost:8080
 ```
-
+```
 🗂️ Folder Structure:
 
 StayHub/
@@ -69,7 +69,6 @@ StayHub/
 ├── app.js               # Main application file
 ├── package.json         # Dependencies and scripts
 └── .env.example         # Example environment variables
-```
 
 ```
 ```
@@ -126,6 +125,6 @@ StayHub/
 👨‍💻 Author:
    Revanth Y  
 📍 Ballari, India  
-📧 revanth.cse.rYmec@gmail.com 
+📧 revanth.cse.rYmec@gmail.com **
 💼 GitHub Profile: (https://github.com/revanth4y)
 
