@@ -37,9 +37,9 @@ This project showcases **frontend development** (responsive EJS templates, inter
 ---
 
 ## ⚙️ Installation & Setup
-
+```
 1. **Clone the repository**
-```bash
+    bash
 git clone https://github.com/revanth4y/StayHub-Airbnb-Clone.git
 cd StayHub-Airbnb-Clone
 2.  Install dependencies:
@@ -69,6 +69,7 @@ StayHub/
 ├── package.json         # Dependencies and scripts
 └── .env.example         # Example environment variables
 
+```
 🔄 How It Works:
 
 .StayHub follows the Model-View-Controller (MVC) design pattern for a clean and maintainable structure.
@@ -100,6 +101,7 @@ StayHub/
        └───────────────┬───────┘
                        │
       (Data / Response rendered back to User)
+
 ```
 
 1.Flow Example: Adding a Listing
