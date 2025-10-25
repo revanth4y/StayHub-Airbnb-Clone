@@ -65,7 +65,8 @@ StayHub/
 🔄 How It Works:
 
 .StayHub follows the Model-View-Controller (MVC) design pattern for a clean and maintainable structure.
-         ``` ┌─────────────┐
+   ``` 
+             ┌─────────────┐
              │   User      │
              └─────┬───────┘
                    │
@@ -92,20 +93,21 @@ StayHub/
        └───────────────┬───────┘
                        │
       (Data / Response rendered back to User)
+```
 
 1.Flow Example: Adding a Listing
 2.User submits a form on /listings/new.
-3Route directs the request to listingsController.createListing.
+3.Route directs the request to listingsController.createListing.
 4.Controller validates the data and saves it via the Listing Model to MongoDB.
 5.Updated listings page is rendered in the View with a success flash message.
 
 🚀 Future Enhancements: 
 
-- 🔍 Search and filter listings by location and price
-- ❤️ Wishlist feature for users
-- 🗓️ Booking system with date availability
-- 📧 Password reset via email (Nodemailer)
-- 🧑‍💼 Admin dashboard to manage users and listings
+🔍 Search and filter listings by location and price
+❤️ Wishlist feature for users
+🗓️ Booking system with date availability
+📧 Password reset via email (Nodemailer)
+🧑‍💼 Admin dashboard to manage users and listings
 
 👨‍💻 Author:
    Revanth Y  
