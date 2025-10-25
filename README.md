@@ -1,40 +1,47 @@
-🏠 StayHub (Airbnb Clone)
+# 🏠 StayHub (Airbnb Clone)
 
-StayHub is a full-stack web application inspired by Airbnb, built using Node.js, Express, MongoDB, and EJS. It allows users to explore, create, and manage property listings with map-based search, image uploads, and secure authentication.
-This project showcases frontend development (responsive EJS templates, interactive maps, forms), backend development (Node.js, Express, RESTful APIs), MVC architecture, database modeling with MongoDB, and deployment on Render.
+StayHub is a **full-stack web application** inspired by Airbnb, built using **Node.js, Express, MongoDB, and EJS**. Users can explore, create, and manage property listings with **map-based search, image uploads, and secure authentication**.  
 
-🔗 Live Demo: https://stayhub-jd2n.onrender.com/listings
+This project showcases **frontend development** (responsive EJS templates, interactive maps, forms), **backend development** (Node.js, Express, RESTful APIs), **MVC architecture**, **database modeling with MongoDB**, and **deployment on Render**.
 
-🌟 Features:
+🔗 **Live Demo:** [https://stayhub-jd2n.onrender.com/listings](https://stayhub-jd2n.onrender.com/listings)
 
-🔐 User authentication (Register / Login / Logout)
-🏡 Add, edit, and delete property listings
-🖼️ Upload image via Cloudinary
-🗺️ Integrated Mapbox interactive maps for locations
-✍️ Add and manage reviews
-📱 Responsive EJS templates for mobile and desktop
-💬 Flash messages for user feedback
-🔒 Environment-secured configuration
-🏛️  MVC Architecture: Clean separation of concerns with Models (data), Views (UI), and Controllers (business logic) for maintainable and scalable code
+---
 
-🧰 Tech Stack:
+## 🌟 Features
 
-Frontend:	EJS, HTML5, CSS3, Bootstrap, JavaScript
-Backend:	Node.js, Express.js
-Database:	MongoDB (via Mongoose)
-Authentication:	Passport.js
-File Storage:	Cloudinary, Multer, Multer-Storage-Cloudinary
-Geocoding & Maps:	Mapbox API
-Validation:	Joi
-Environment: Config	dotenv
-Deployment:	Render (Server), MongoDB Atlas (Database)
+- 🔐 User authentication (Register / Login / Logout)  
+- 🏡 Add, edit, and delete property listings  
+- 🖼️ Upload images via Cloudinary  
+- 🗺️ Integrated Mapbox interactive maps for locations  
+- ✍️ Add and manage reviews  
+- 📱 Responsive EJS templates for mobile and desktop  
+- 💬 Flash messages for user feedback  
+- 🔒 Environment-secured configuration  
+- 🏛️ **MVC Architecture:** Clean separation of concerns with **Models** (data), **Views** (UI), and **Controllers** (business logic) for maintainable and scalable code  
 
-⚙️ Installation & Setup:
+---
 
-1. Clone the repository:
-   //bash
-   git clone [https://github.com/revanth4y/StayHub-Airbnb-Clone]
-   cd StayHub-Airbnb-Clone
+## 🧰 Tech Stack
+
+**Frontend:** EJS, HTML5, CSS3, Bootstrap, JavaScript  
+**Backend:** Node.js, Express.js  
+**Database:** MongoDB (via Mongoose)  
+**Authentication:** Passport.js  
+**File Storage:** Cloudinary, Multer, Multer-Storage-Cloudinary  
+**Geocoding & Maps:** Mapbox API  
+**Validation:** Joi  
+**Environment:** dotenv  
+**Deployment:** Render (Server), MongoDB Atlas (Database)  
+
+---
+
+## ⚙️ Installation & Setup
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/revanth4y/StayHub-Airbnb-Clone.git
+cd StayHub-Airbnb-Clone
 2.  Install dependencies:
     npm install
 3. Create a .env file in the root directory and add the following environment variables:
@@ -114,9 +121,3 @@ StayHub/
 📍 Ballari, India  
 📧 revanth.cse.rYmec@gmail.com 
 💼 GitHub Profile: (https://github.com/revanth4y)
-
-    
-
-
-
-
