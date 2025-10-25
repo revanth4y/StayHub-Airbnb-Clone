@@ -59,22 +59,29 @@ This project showcases **frontend development** (responsive EJS templates, inter
 ```
 🗂️ Folder Structure:
 
-StayHub/
-├── models/              # Mongoose models (Listing, Review, User)
-├── routes/              # Express routes
-├── controllers/         # Controller logic for routes
-├── public/              # Static assets (CSS, JS, Images)
-├── views/               # EJS templates
-├── utils/               # Helper files (error handling, validation)
-├── app.js               # Main application file
-├── package.json         # Dependencies and scripts
-└── .env.example         # Example environment variables
+PROJECT/
+├── controllers/       # Controller logic for routes
+├── init/              # Initialization scripts or configs
+├── models/            # Mongoose models
+├── node_modules/      # Installed dependencies
+├── public/            # Static assets (CSS, JS, Images)
+├── routes/            # Express routes
+├── utils/             # Helper files (error handling, validation)
+├── views/             # EJS templates
+├── .env               # Environment variables
+├── app.js             # Main application file
+├── cloudConfig.js     # Cloudinary / storage config
+├── middleware.js      # Custom middleware
+├── schema.js          # Validation schema
+├── package.json       # Dependencies and scripts
+└── package-lock.json  # Locked versions of dependencies
+
 
 ```
 ```
 🔄 How It Works:
 
-.StayHub follows the Model-View-Controller (MVC) design pattern for a clean and maintainable structure.
+- StayHub follows the Model-View-Controller (MVC) design pattern for a clean and maintainable structure.
    
              ┌─────────────┐
              │   User      │
