@@ -113,19 +113,19 @@ StayHub/
 4.Controller validates the data and saves it via the Listing Model to MongoDB.
 5.Updated listings page is rendered in the View with a success flash message.
 
-```
+
 ```
 🚀 Future Enhancements: 
 
-🔍 Search and filter listings by location and price
-❤️ Wishlist feature for users
-🗓️ Booking system with date availability
-📧 Password reset via email (Nodemailer)
-🧑‍💼 Admin dashboard to manage users and listings
+- 🔍 Search and filter listings by location and price
+- ❤️ Wishlist feature for users
+- 🗓️ Booking system with date availability
+- 📧 Password reset via email (Nodemailer)
+- 🧑‍💼 Admin dashboard to manage users and listings
 
 👨‍💻 Author:
    Revanth Y  
 📍 Ballari, India  
 📧 revanth.cse.rYmec@gmail.com 
 💼 GitHub Profile: (https://github.com/revanth4y)
-```
+
