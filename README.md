@@ -40,8 +40,8 @@ This project showcases **frontend development** (responsive EJS templates, inter
 ```
 1. **Clone the repository**
     bash
-git clone https://github.com/revanth4y/StayHub-Airbnb-Clone.git
-cd StayHub-Airbnb-Clone
+    git clone https://github.com/revanth4y/StayHub-Airbnb-Clone.git
+    cd StayHub-Airbnb-Clone
 2.  Install dependencies:
     npm install
 3. Create a .env file in the root directory and add the following environment variables:
@@ -102,7 +102,7 @@ StayHub/
                        │
       (Data / Response rendered back to User)
 
-```
+
 
 1.Flow Example: Adding a Listing
 2.User submits a form on /listings/new.
@@ -123,3 +123,4 @@ StayHub/
 📍 Ballari, India  
 📧 revanth.cse.rYmec@gmail.com 
 💼 GitHub Profile: (https://github.com/revanth4y)
+```
