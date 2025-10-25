@@ -59,7 +59,7 @@ This project showcases **frontend development** (responsive EJS templates, inter
 ```
 🗂️ Folder Structure:
 
-PROJECT/
+StayHub/
 ├── controllers/       # Controller logic for routes
 ├── init/              # Initialization scripts or configs
 ├── models/            # Mongoose models
