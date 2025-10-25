@@ -65,7 +65,7 @@ StayHub/
 🔄 How It Works:
 
 .StayHub follows the Model-View-Controller (MVC) design pattern for a clean and maintainable structure.
-             ┌─────────────┐
+         ``` ┌─────────────┐
              │   User      │
              └─────┬───────┘
                    │
