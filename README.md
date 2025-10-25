@@ -24,15 +24,15 @@ This project showcases **frontend development** (responsive EJS templates, inter
 
 ## 🧰 Tech Stack
 
-**Frontend:** EJS, HTML5, CSS3, Bootstrap, JavaScript  
-**Backend:** Node.js, Express.js  
-**Database:** MongoDB (via Mongoose)  
-**Authentication:** Passport.js  
-**File Storage:** Cloudinary, Multer, Multer-Storage-Cloudinary  
-**Geocoding & Maps:** Mapbox API  
-**Validation:** Joi  
-**Environment:** dotenv  
-**Deployment:** Render (Server), MongoDB Atlas (Database)  
+- **Frontend:** EJS, HTML5, CSS3, Bootstrap, JavaScript  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB (via Mongoose)  
+- **Authentication:** Passport.js  
+- **File Storage:** Cloudinary, Multer, Multer-Storage-Cloudinary  
+- **Geocoding & Maps:** Mapbox API  
+- **Validation:** Joi  
+- **Environment:** dotenv  
+- **Deployment:** Render (Server), MongoDB Atlas (Database)  
 
 ---
 
@@ -55,6 +55,7 @@ This project showcases **frontend development** (responsive EJS templates, inter
    node app.js
 5. Open your browser and visit:
    http://localhost:8080
+```
 
 🗂️ Folder Structure:
 
@@ -68,12 +69,14 @@ StayHub/
 ├── app.js               # Main application file
 ├── package.json         # Dependencies and scripts
 └── .env.example         # Example environment variables
+```
 
+```
 ```
 🔄 How It Works:
 
 .StayHub follows the Model-View-Controller (MVC) design pattern for a clean and maintainable structure.
-   ``` 
+   
              ┌─────────────┐
              │   User      │
              └─────┬───────┘
@@ -110,6 +113,8 @@ StayHub/
 4.Controller validates the data and saves it via the Listing Model to MongoDB.
 5.Updated listings page is rendered in the View with a success flash message.
 
+```
+```
 🚀 Future Enhancements: 
 
 🔍 Search and filter listings by location and price
