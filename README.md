@@ -2,7 +2,7 @@
 
 StayHub is a **full-stack web application** inspired by Airbnb, built using **Node.js, Express, MongoDB, and EJS**. Users can explore, create, and manage property listings with **map-based search, image uploads, and secure authentication**.  
 
-This project showcases **frontend development** (responsive EJS templates, interactive maps, forms), **backend development** (Node.js, Express, RESTful APIs), **MVC architecture**, **database modeling with MongoDB**, and **deployment on Render**.
+This project showcases **frontend development** (responsive EJS templates, interactive maps, forms), **backend development** (Node.js, Express, RESTful APIs), **MVC architecture**, **database modeling with MongoDB**, and **deployment on Render**. 
 
 🔗 **Live Demo:** [https://stayhub-jd2n.onrender.com/listings](https://stayhub-jd2n.onrender.com/listings)
 
