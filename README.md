@@ -132,6 +132,6 @@ StayHub/
 👨‍💻 Author:
    Revanth Y  
 📍 Ballari, India  
-📧 revanth.cse.rYmec@gmail.com  <br>
+📧 revanth.cse.rymec@gmail.com  <br>
 💼 GitHub Profile: (https://github.com/revanth4y)
 
