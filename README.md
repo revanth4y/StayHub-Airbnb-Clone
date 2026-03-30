@@ -1,137 +1,146 @@
-# 🏠 StayHub (Airbnb Clone)
+# StayHub (Airbnb Clone)
 
-StayHub is a **full-stack web application** inspired by Airbnb, built using **Node.js, Express, MongoDB, and EJS**. Users can explore, create, and manage property listings with **map-based search, image uploads, and secure authentication**.  
-
-This project showcases **frontend development** (responsive EJS templates, interactive maps, forms), **backend development** (Node.js, Express, RESTful APIs), **MVC architecture**, **database modeling with MongoDB**, and **deployment on Render**. 
-
-🔗 **Live Demo:** [https://stayhub-jd2n.onrender.com/listings](https://stayhub-jd2n.onrender.com/listings)
+A full-stack rental platform engineered using the Model-View-Controller (MVC) architecture to manage property listing, discovery, and user interactions with secure workflows and scalable integrations.
 
 ---
 
-## 🌟 Features
+## Overview
 
-- 🔐 User authentication (Register / Login / Logout)  
-- 🏡 Add, edit, and delete property listings  
-- 🖼️ Upload images via Cloudinary  
-- 🗺️ Integrated Mapbox interactive maps for locations  
-- ✍️ Add and manage reviews  
-- 📱 Responsive EJS templates for mobile and desktop  
-- 💬 Flash messages for user feedback  
-- 🔒 Environment-secured configuration  
-- 🏛️ **MVC Architecture:** Clean separation of concerns with **Models** (data), **Views** (UI), and **Controllers** (business logic) for maintainable and scalable code  
+StayHub implements an end-to-end rental workflow that:
 
----
+- Enables users to create and manage property listings  
+- Supports location-based discovery using geospatial data  
+- Handles media uploads and storage efficiently  
+- Maintains secure authentication and session management  
+- Provides structured request handling through RESTful APIs  
 
-## 🧰 Tech Stack
-
-- **Frontend:** EJS, HTML5, CSS3, Bootstrap, JavaScript  
-- **Backend:** Node.js, Express.js  
-- **Database:** MongoDB (via Mongoose)  
-- **Authentication:** Passport.js  
-- **File Storage:** Cloudinary, Multer, Multer-Storage-Cloudinary  
-- **Geocoding & Maps:** Mapbox API  
-- **Validation:** Joi  
-- **Environment:** dotenv  
-- **Deployment:** Render (Server), MongoDB Atlas (Database)  
+The system focuses on clean architecture, data modeling, and integration with external services.
 
 ---
 
-## ⚙️ Installation & Setup
-```
-1. **Clone the repository**
-    bash
-    git clone https://github.com/revanth4y/StayHub-Airbnb-Clone.git
-    cd StayHub-Airbnb-Clone
-2.  Install dependencies:
-    npm install
-3. Create a .env file in the root directory and add the following environment variables:
-   ATLASDB_URL=<your_mongodb_connection_string>
-   CLOUDINARY_CLOUD_NAME=<your_cloud_name>
-   CLOUDINARY_KEY=<your_cloudinary_api_key>
-   CLOUDINARY_SECRET=<your_cloudinary_secret>
-   MAP_TOKEN=<your_mapbox_token>
-   SECRET=<any_random_secret>
-4. Run the development server:
-   node app.js
-5. Open your browser and visit:
-   http://localhost:8080
-```
-```
-🗂️ Folder Structure:
+## Key Contributions
 
+- Architected a RESTful backend using MVC principles to separate routing, business logic, and data access layers  
+- Implemented secure session-based authentication using Passport.js to protect user-specific operations  
+- Designed MongoDB schemas for listings, users, and reviews using relational referencing  
+- Integrated Cloudinary for scalable media storage and Mapbox for geospatial visualization  
+- Optimized database interactions by reducing redundant queries and improving response efficiency  
+
+---
+
+## System Architecture
+
+### MVC Design
+
+- Routes handle request routing  
+- Controllers encapsulate business logic  
+- Models manage database interactions  
+- Views render dynamic UI  
+
+---
+
+### Request Flow
+
+```text
+Client Request
+   ↓
+Express Router
+   ↓
+Authentication Middleware
+   ↓
+Validation Middleware (Joi)
+   ↓
+Controller Logic
+   ↓
+Mongoose Model
+   ↓
+MongoDB
+   ↓
+Response (View / JSON)
+```
+Data Modeling
+Listings reference users and associated reviews
+Reviews maintain relationships with both users and listings
+
+Ensures:
+
+Data consistency
+Efficient querying
+Scalable relationships
+
+Data Relationships
+graph LR
+    U[User] -->|creates| L[Listing]
+    U -->|writes| R[Review]
+    L -->|has| R
+
+Media and Geospatial Integration
+Cloudinary handles image upload, storage, and optimized delivery
+Implemented forward geocoding using Mapbox to convert user-input addresses into latitude and longitude coordinates
+Enabled map-based discovery using geospatial data
+
+Ensures:
+
+Accurate location representation
+Scalable media handling
+Improved user experience
+
+Authentication and Security
+Session-based authentication using Passport.js
+Route protection via middleware
+Input validation using Joi
+Environment-based configuration for sensitive data
+
+Middleware Strategy
+Centralized authentication middleware for protected routes
+Joi-based validation middleware to enforce request schema consistency
+Centralized error handling to reduce duplication
+
+Ensures:
+
+Separation of concerns
+Maintainable codebase
+Consistent request handling
+
+Tech Stack
+Backend: Node.js, Express.js
+Frontend: EJS, HTML, CSS, Bootstrap
+Database: MongoDB (Mongoose)
+Authentication: Passport.js
+Storage: Cloudinary
+Maps: Mapbox API
+Validation: Joi
+```
+Project Structure
 StayHub/
-├── controllers/       # Controller logic for routes
-├── init/              # Initialization scripts or configs
-├── models/            # Mongoose models
-├── node_modules/      # Installed dependencies
-├── public/            # Static assets (CSS, JS, Images)
-├── routes/            # Express routes
-├── utils/             # Helper files (error handling, validation)
-├── views/             # EJS templates
-├── .env               # Environment variables
-├── app.js             # Main application file
-├── cloudConfig.js     # Cloudinary / storage config
+├── controllers/       # Business logic
+├── models/            # Database schemas
+├── routes/            # Request routing
+├── views/             # UI templates
+├── public/            # Static assets
+├── utils/             # Helpers and validation
 ├── middleware.js      # Custom middleware
-├── schema.js          # Validation schema
-├── package.json       # Dependencies and scripts
-└── package-lock.json  # Locked versions of dependencies
-
-
+├── cloudConfig.js     # Cloudinary configuration
+└── app.js             # Application entry point
 ```
-```
-🔄 How It Works:
 
-- StayHub follows the Model-View-Controller (MVC) design pattern for a clean and maintainable structure.
-   
-             ┌─────────────┐
-             │   User      │
-             └─────┬───────┘
-                   │
-        (Sends request / submits form)
-                   │
-                   ▼
-             ┌─────────────┐
-             │   Routes    │
-             │ (Traffic)   │
-             └─────┬───────┘
-                   │
-                   ▼
-             ┌─────────────┐
-             │ Controller  │
-             │ (Logic)     │
-             └─────┬───────┘
-       ┌───────────┴───────────┐
-       ▼                       ▼
-┌─────────────┐           ┌─────────────┐
-│   Model     │           │    View     │
-│ (Database)  │           │ (EJS Pages) │
-└─────────────┘           └─────────────┘
-       │                       ▲
-       └───────────────┬───────┘
-                       │
-      (Data / Response rendered back to User)
+Performance Considerations
+Reduced redundant database queries to improve response time
+Structured schema design for efficient data access
+Asynchronous media handling via Cloudinary
+Middleware-based request handling for clean execution flow
 
+Limitations
+No booking or availability system
+No advanced search or filtering
+Monolithic architecture
 
+Future Enhancements
+Booking and availability system
+Advanced filtering and search
+Wishlist functionality
+Email-based authentication
+Administrative dashboard
 
-1.Flow Example: Adding a Listing
-2.User submits a form on /listings/new.
-3.Route directs the request to listingsController.createListing.
-4.Controller validates the data and saves it via the Listing Model to MongoDB.
-5.Updated listings page is rendered in the View with a success flash message.
-
-
-```
-🚀 Future Enhancements: 
-
-- 🔍 Search and filter listings by location and price
-- ❤️ Wishlist feature for users
-- 🗓️ Booking system with date availability
-- 📧 Password reset via email (Nodemailer)
-- 🧑‍💼 Admin dashboard to manage users and listings
-
-👨‍💻 Author:
-   Revanth Y  
-📍 Ballari, India  
-📧 revanth.cse.rymec@gmail.com  <br>
-💼 GitHub Profile: (https://github.com/revanth4y)
-
+Summary
+This project demonstrates a structured approach to building a full-stack application with emphasis on backend architecture, data modeling, and integration with external services. It reflects practical system design considerations relevant to production-grade web applications.
